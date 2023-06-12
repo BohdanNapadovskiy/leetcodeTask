@@ -1,7 +1,7 @@
 package org.example;
 
 public class TwoSumSolution {
-    public static int[] twoSum(int[] nums, int target) {
+    public int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
             int currentElem = nums[i];
