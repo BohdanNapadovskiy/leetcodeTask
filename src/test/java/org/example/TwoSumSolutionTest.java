@@ -8,9 +8,9 @@ class TwoSumSolutionTest {
 
     @Test
     void whenInputArrayOfNumsThenReturnTwoSum() {
-        int[] inputArray = new int[]{2, 7, 11, 15};
-        int[] expectedResult = new int[] {0,1};
-        int target = 9;
+        int[] inputArray = new int[]{3,2,4};
+        int[] expectedResult = new int[] {1,2};
+        int target = 6;
         TwoSumSolution solution = new TwoSumSolution();
         int[] result = solution.twoSum(inputArray, target);
         assertArrayEquals(expectedResult, result);

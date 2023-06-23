@@ -14,7 +14,6 @@ public class TwoSumSolution {
                     return result;
                 }
             }
-
         }
         return result;
 
