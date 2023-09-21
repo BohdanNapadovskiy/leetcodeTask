@@ -4,23 +4,25 @@ import java.util.Arrays;
 
 public class ReverseIntegerSolution {
     public int reverse(int x) {
-        char[] array;
-        int result;
-        if(x < 0) array = Integer.toString(-1 * x).toCharArray();
-        else array = Integer.toString(x).toCharArray();
-        char[] resultArray = new char[array.length];
-        int length = array.length - 1;
+        int num = x;
+        if (x < 0) num = -1 * x;
+        char[] array = Integer.toString(num).toCharArray();
+        char[] result = new char[array.length];
+        StringBuilder str = new StringBuilder();
+        int count = array.length - 1;
         int i = 0;
-        while (length >= 0) {
-            resultArray[i] = array[length];
+        while (count >= 0) {
+            result[i] = array[count];
+            count--;
             i++;
-            length--;
         }
-        String str = new String(resultArray).trim();
-        int b = Integer.parseInt(str);
-        if(x <0 ) result = -1 * b;
-        else result = b;
-        return result;
-
+        try {
+            String resultStr = str.append(result).toString();
+            int resultInt = Integer.parseInt(resultStr);
+            if (x < 0) resultInt = -1 * resultInt;
+            return resultInt;
+        } catch (NumberFormatException e) {
+            return 0;
+        }
     }
 }

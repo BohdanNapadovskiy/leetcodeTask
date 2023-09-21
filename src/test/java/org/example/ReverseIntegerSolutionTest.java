@@ -33,7 +33,7 @@ class ReverseIntegerSolutionTest {
     void whenInputIntegerFinishOnZerosThenReturnReverseResult() {
         int input = 1534236469;
         ReverseIntegerSolution solution = new ReverseIntegerSolution();
-        assertEquals(-2,solution.reverse(input));
+        assertEquals(0,solution.reverse(input));
     }
 
 
