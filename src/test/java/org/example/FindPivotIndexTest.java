@@ -1,8 +1,9 @@
 package org.example;
 
+import org.example.arrays.FindPivotIndex;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class FindPivotIndexTest {
 

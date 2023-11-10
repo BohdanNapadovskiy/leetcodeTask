@@ -1,8 +1,9 @@
 package org.example;
 
+import org.example.arrays.NumberOfIslandSolution;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class NumberOfIslandTest {
 

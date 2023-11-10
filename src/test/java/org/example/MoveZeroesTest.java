@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.arrays.MoveZeroes;
 import org.junit.jupiter.api.Test;
 
 class MoveZeroesTest {

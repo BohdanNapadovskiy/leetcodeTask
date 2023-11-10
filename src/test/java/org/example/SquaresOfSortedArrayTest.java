@@ -1,5 +1,6 @@
 package org.example;
 
+import org.example.arrays.SquaresOfSortedArray;
 import org.junit.jupiter.api.Test;
 
 class SquaresOfSortedArrayTest {
